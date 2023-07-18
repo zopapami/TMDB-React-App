@@ -1,0 +1,110 @@
+/* ---------- link scss files to App ---------------------------------------- */
+@import "./assets/css/Sidebar.scss";
+@import "./assets/css/Popup.scss";
+@import "./assets/css/Pagination.scss";
+
+/* ---------- Body, App ---------------------------------------- */
+body {
+  background-color: #102025;
+}
+
+.logo {
+  padding: 20px;
+  box-shadow: 0 0 100px rgba(71, 192, 196, 0.2);
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 20% 80%;
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 30% 70%;
+  }
+}
+
+.caps {
+  text-transform: capitalize;
+}
+
+/* ---------- Main Content Area ---------------------------------------- */
+.main-content-area {
+  padding: 0px 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    color: #47c0c4;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    font-size: 2vw;
+    opacity: 20%;
+
+    @media (max-width: 800px) {
+      font-size: 3vw;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 4vw;
+    }
+  }
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
+
+  ul {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    height: 90%;
+    width: 100%;
+    padding: 0;
+    border-radius: 8px;
+    background-color: #47c0c4;
+    transition: 0.2s ease;
+    font-weight: 500;
+    margin: 10px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      height: 80%;
+      width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      object-fit: cover;
+    }
+
+    p {
+      padding: 0 15px;
+      margin: 1% 0;
+      font-size: 1.25vw;
+
+      @media (max-width: 800px) {
+        font-size: 2vw;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 3.2vw;
+      }
+    }
+  }
+}

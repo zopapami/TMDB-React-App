@@ -1,0 +1,12 @@
+/* ---------- Pagination ---------------------------------------- */
+@import "./Buttons.scss";
+
+.pagination {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+
+  button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+}

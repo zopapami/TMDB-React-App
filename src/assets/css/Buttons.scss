@@ -1,0 +1,29 @@
+/* ---------- Buttons ---------------------------------------- */
+button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #47c0c4;
+  border-radius: 40px;
+  background: none;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    background-color: #47c0c4;
+    transform: translateY(2px);
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
